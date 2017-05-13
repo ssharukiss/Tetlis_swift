@@ -43,6 +43,8 @@ class BoardScene: SKScene, SKPhysicsContactDelegate{
     //シーンが生成されたタイミングで呼ばれる
     override func didMove(to view: SKView) {
         
+       
+        
         
         var mySoundAction: SKAction = SKAction.playSoundFileNamed("BGM179-161031-bokobokobomber-wav", waitForCompletion: true)
         
