@@ -172,6 +172,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="haikeisann.png" translatesAutoresizingMaskIntoConstraints="NO" id="OaZ-oZ-FRj">
+                                <rect key="frame" x="0.0" y="0.0" width="376" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="to game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bah-0P-JFx">
                                 <rect key="frame" x="83" y="456" width="154" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -179,13 +183,10 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nevetr.png" translatesAutoresizingMaskIntoConstraints="NO" id="4MB-qc-uPv">
-                                <rect key="frame" x="0.0" y="149" width="375" height="197"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIs-T7-fXD">
-                                <rect key="frame" x="0.0" y="394" width="376" height="144"/>
+                                <rect key="frame" x="-1" y="412" width="376" height="144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button" image="bota-nn.png">
                                     <color key="titleColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -193,6 +194,10 @@
                                     <segue destination="BYZ-38-t0r" kind="push" id="F76-hR-xvM"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nevetr.png" translatesAutoresizingMaskIntoConstraints="NO" id="4MB-qc-uPv">
+                                <rect key="frame" x="-1" y="107" width="375" height="197"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -225,15 +230,36 @@
                     <navigationItem key="navigationItem" id="GEw-aH-wAN"/>
                     <connections>
                         <outlet property="boardView" destination="X94-dp-4IQ" id="tuX-Jq-wdh"/>
+                        <segue destination="mnC-VY-2JZ" kind="push" identifier="toFinish" id="ac0-Df-mNc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="371" y="383"/>
         </scene>
+        <!--Finish View Controller-->
+        <scene sceneID="VHU-Hj-qRr">
+            <objects>
+                <viewController id="mnC-VY-2JZ" customClass="FinishViewController" customModule="てtりs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LcS-Mi-IGx"/>
+                        <viewControllerLayoutGuide type="bottom" id="O7V-yS-yJi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="COB-og-Mji">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Zwh-U6-PzX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h48-u5-21c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="937" y="383"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bota-nn.png" width="411" height="128"/>
+        <image name="haikeisann.png" width="512" height="780"/>
         <image name="images.png" width="118" height="223"/>
         <image name="nevetr.png" width="595" height="298"/>
     </resources>

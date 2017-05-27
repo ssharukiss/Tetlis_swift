@@ -24,6 +24,12 @@ class SKViewController: UIViewController {
         boardView.presentScene(boardScene)
         
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        Timer.scheduledTimer(withTimeInterval: 10.0, repeats: false) { (timer) in
+            self.finishgame()
+        }
         
     }
     
@@ -34,7 +40,10 @@ class SKViewController: UIViewController {
     
     
     func finishgame () {
-//            self.performSegue(withIdentifier: "tostart", sender: nil)
+        print("=====遷移！！！！！！！！！！")
+        boardScene.finish()
+        
+            self.performSegue(withIdentifier: "toFinish", sender: nil)
 //        self.dismiss(animated: true, completion: nil)
 //        self.presentedViewController?.dismiss(animated: true, completion: nil)
         

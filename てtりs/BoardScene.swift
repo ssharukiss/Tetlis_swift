@@ -14,6 +14,9 @@ import AVFoundation
 class BoardScene: SKScene, SKPhysicsContactDelegate{
     
     
+    
+    var timernum: Int = 0
+    
     var nodenum: Int!
     
     var pointnum: Float = 0.0
@@ -39,19 +42,23 @@ class BoardScene: SKScene, SKPhysicsContactDelegate{
     var contactNode = (bitMask:0, nameArray:[]) as (bitMask:UInt32,nameArray:Array)
     
     var contactArray:[Any] = []
+    
+    var SoundAction: SKAction!
+
 
     //シーンが生成されたタイミングで呼ばれる
     override func didMove(to view: SKView) {
         
        
+        self.SoundAction = SKAction.playSoundFileNamed("decision17.mp3", waitForCompletion: true)
         
+        var SoundAction: SKAction = SKAction.playSoundFileNamed("BGM179-161031-bokobokobomber-wav", waitForCompletion: true)
         
-        var mySoundAction: SKAction = SKAction.playSoundFileNamed("BGM179-161031-bokobokobomber-wav", waitForCompletion: true)
-        
-        let soundRepeat = SKAction.repeatForever(mySoundAction)
+        let soundRepeat = SKAction.repeatForever(SoundAction)
         
         // 再生アクション.
-        self.run(soundRepeat);
+        self.run(soundRepeat,withKey:"die-sound");
+    
         
         
         self.physicsWorld.contactDelegate = self
@@ -152,17 +159,16 @@ class BoardScene: SKScene, SKPhysicsContactDelegate{
             contact.bodyB.node?.removeFromParent()
             
             // 再生データの作成.
-            let mySoundAction: SKAction = SKAction.playSoundFileNamed("decision17.mp3", waitForCompletion: true)
             
             // 再生アクション.
-            self.run(mySoundAction);
+            self.run(SoundAction);
             
             pointnum = pointnum + 0.5
             print("pointuum = \(pointnum)")
             pointlabel.text = String(pointnum)
             
             
-            ido()
+//            ido()
         }
         
         print("A:\(contact.bodyA.contactTestBitMask),B:\(contact.bodyB.contactTestBitMask)")
@@ -176,6 +182,8 @@ class BoardScene: SKScene, SKPhysicsContactDelegate{
         for i in 0..<5{ //0...4
            
             nodenum = Int(arc4random_uniform(5))
+            
+            
             
 
             
@@ -218,7 +226,12 @@ class BoardScene: SKScene, SKPhysicsContactDelegate{
 //            self.node = node
             self.downNodes.append(node)
             nodeCounter += 1
+            
+            
+            
         }
+        
+
         
         
         
@@ -275,6 +288,22 @@ class BoardScene: SKScene, SKPhysicsContactDelegate{
             var a = SKViewController()
             a.finishgame()
         }
+    }
+    
+    
+    func finish(){
+//        SKAction.stop()
+
+//        self.stop(mySoundAction)
+//        mySoundAction = SKAction.stop()
+        
+        self.removeAllActions()
+        
+    
+        
+
+
+        
     }
     
         

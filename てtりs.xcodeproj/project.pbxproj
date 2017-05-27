@@ -58,6 +58,9 @@
 		8ACDD7301D30D3AE00D7406C /* startgachaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACDD72F1D30D3AE00D7406C /* startgachaViewController.swift */; };
 		8AD06A261E052D9B0064779F /* indexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD06A251E052D9B0064779F /* indexViewController.swift */; };
 		8ADCA2551DCDED160021B3F5 /* ShapeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADCA2541DCDED160021B3F5 /* ShapeClass.swift */; };
+		8AF4C28C1ED86924005D5E8E /* ha-ike-i.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AF4C28B1ED86924005D5E8E /* ha-ike-i.png */; };
+		8AF4C28E1ED86AE6005D5E8E /* haikeisann.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AF4C28D1ED86AE6005D5E8E /* haikeisann.png */; };
+		8AF4C2901ED95700005D5E8E /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF4C28F1ED95700005D5E8E /* FinishViewController.swift */; };
 		8AFC61C01DA8CCDC00BD6681 /* tetlis-home.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AFC61BF1DA8CCDC00BD6681 /* tetlis-home.png */; };
 		8AFC61C21DA8E54700BD6681 /* tetlis-home-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AFC61C11DA8E54600BD6681 /* tetlis-home-2.png */; };
 /* End PBXBuildFile section */
@@ -137,6 +140,9 @@
 		8ACDD72F1D30D3AE00D7406C /* startgachaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = startgachaViewController.swift; sourceTree = "<group>"; };
 		8AD06A251E052D9B0064779F /* indexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = indexViewController.swift; sourceTree = "<group>"; };
 		8ADCA2541DCDED160021B3F5 /* ShapeClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeClass.swift; sourceTree = "<group>"; };
+		8AF4C28B1ED86924005D5E8E /* ha-ike-i.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ha-ike-i.png"; sourceTree = "<group>"; };
+		8AF4C28D1ED86AE6005D5E8E /* haikeisann.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haikeisann.png; sourceTree = "<group>"; };
+		8AF4C28F1ED95700005D5E8E /* FinishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
 		8AFC61BF1DA8CCDC00BD6681 /* tetlis-home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tetlis-home.png"; sourceTree = "<group>"; };
 		8AFC61C11DA8E54600BD6681 /* tetlis-home-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tetlis-home-2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -211,6 +217,8 @@
 		8A90833C1D433888007933A3 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				8AF4C28D1ED86AE6005D5E8E /* haikeisann.png */,
+				8AF4C28B1ED86924005D5E8E /* ha-ike-i.png */,
 				8A5CCC2B1E3CB0920055AC1E /* item */,
 				8A4A69DF1D966827003CB508 /* bota-nn.png */,
 				8A36F84F1D30D005000D1078 /* images.png */,
@@ -268,6 +276,7 @@
 				8A90833C1D433888007933A3 /* images */,
 				8A9CD5EF1CF98A69006E40B7 /* AppDelegate.swift */,
 				8A9CD5F11CF98A69006E40B7 /* ViewController.swift */,
+				8AF4C28F1ED95700005D5E8E /* FinishViewController.swift */,
 				8ADCA2541DCDED160021B3F5 /* ShapeClass.swift */,
 				8A9CD5F31CF98A69006E40B7 /* Main.storyboard */,
 				8A9CD5F61CF98A69006E40B7 /* Assets.xcassets */,
@@ -412,6 +421,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AF4C28E1ED86AE6005D5E8E /* haikeisann.png in Resources */,
 				8A12BD371E615CB600AE1552 /* file2-no5.png in Resources */,
 				8A36F7C51D1E76AB000D1078 /* no=1.png in Resources */,
 				8A9CD65A1CF9AC21006E40B7 /* right.png in Resources */,
@@ -442,6 +452,7 @@
 				8A12BD391E615CEE00AE1552 /* file2-no4.png in Resources */,
 				8A12BD3D1E6167E900AE1552 /* BGM179-161031-bokobokobomber-wav.wav in Resources */,
 				8A9CD65C1CF9AD00006E40B7 /* 1.png in Resources */,
+				8AF4C28C1ED86924005D5E8E /* ha-ike-i.png in Resources */,
 				8A36F8461D30C1FB000D1078 /* cute.png in Resources */,
 				8A5CCC351E3CB09E0055AC1E /* file3-no3.png in Resources */,
 				8A36F7C61D1E76AB000D1078 /* 2.png in Resources */,
@@ -487,6 +498,7 @@
 				8A5CCC441E4EF7CF0055AC1E /* BoardScene.swift in Sources */,
 				8ADCA2551DCDED160021B3F5 /* ShapeClass.swift in Sources */,
 				8A9CD5F01CF98A69006E40B7 /* AppDelegate.swift in Sources */,
+				8AF4C2901ED95700005D5E8E /* FinishViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
