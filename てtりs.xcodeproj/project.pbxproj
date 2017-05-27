@@ -61,6 +61,7 @@
 		8AF4C28C1ED86924005D5E8E /* ha-ike-i.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AF4C28B1ED86924005D5E8E /* ha-ike-i.png */; };
 		8AF4C28E1ED86AE6005D5E8E /* haikeisann.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AF4C28D1ED86AE6005D5E8E /* haikeisann.png */; };
 		8AF4C2901ED95700005D5E8E /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF4C28F1ED95700005D5E8E /* FinishViewController.swift */; };
+		8AF4C2921ED9921F005D5E8E /* yesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF4C2911ED9921F005D5E8E /* yesViewController.swift */; };
 		8AFC61C01DA8CCDC00BD6681 /* tetlis-home.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AFC61BF1DA8CCDC00BD6681 /* tetlis-home.png */; };
 		8AFC61C21DA8E54700BD6681 /* tetlis-home-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AFC61C11DA8E54600BD6681 /* tetlis-home-2.png */; };
 /* End PBXBuildFile section */
@@ -143,6 +144,7 @@
 		8AF4C28B1ED86924005D5E8E /* ha-ike-i.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ha-ike-i.png"; sourceTree = "<group>"; };
 		8AF4C28D1ED86AE6005D5E8E /* haikeisann.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haikeisann.png; sourceTree = "<group>"; };
 		8AF4C28F1ED95700005D5E8E /* FinishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
+		8AF4C2911ED9921F005D5E8E /* yesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = yesViewController.swift; path = ../yesViewController.swift; sourceTree = "<group>"; };
 		8AFC61BF1DA8CCDC00BD6681 /* tetlis-home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tetlis-home.png"; sourceTree = "<group>"; };
 		8AFC61C11DA8E54600BD6681 /* tetlis-home-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tetlis-home-2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -276,6 +278,7 @@
 				8A90833C1D433888007933A3 /* images */,
 				8A9CD5EF1CF98A69006E40B7 /* AppDelegate.swift */,
 				8A9CD5F11CF98A69006E40B7 /* ViewController.swift */,
+				8AF4C2911ED9921F005D5E8E /* yesViewController.swift */,
 				8AF4C28F1ED95700005D5E8E /* FinishViewController.swift */,
 				8ADCA2541DCDED160021B3F5 /* ShapeClass.swift */,
 				8A9CD5F31CF98A69006E40B7 /* Main.storyboard */,
@@ -490,6 +493,7 @@
 			files = (
 				8A9CD5F21CF98A69006E40B7 /* ViewController.swift in Sources */,
 				8A6D473D1DF29C580058711F /* test.swift in Sources */,
+				8AF4C2921ED9921F005D5E8E /* yesViewController.swift in Sources */,
 				8A4D84041D4605B1000740E6 /* startViewController.swift in Sources */,
 				8ACDD72E1D30D39D00D7406C /* gachaViewController.swift in Sources */,
 				8A5CCC461E4EF7FF0055AC1E /* SKViewController.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  FinishViewController.swift
+//  yesViewController.swift
 //  てtりs
 //
 //  Created by 上住悠生 on 2017/05/27.
@@ -8,11 +8,9 @@
 
 import UIKit
 
-class FinishViewController: UIViewController {
+class yesViewController: UIViewController {
 
     override func viewDidLoad() {
-        
-    @IBOutlet 
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
