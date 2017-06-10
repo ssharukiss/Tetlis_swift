@@ -52,7 +52,9 @@ class BoardScene: SKScene, SKPhysicsContactDelegate{
        
         self.SoundAction = SKAction.playSoundFileNamed("decision17.mp3", waitForCompletion: true)
         
-        var SoundAction: SKAction = SKAction.playSoundFileNamed("BGM179-161031-bokobokobomber-wav", waitForCompletion: true)
+        var bgmSoundAction = SKAudioNode(fileNamed: "BGM179-161031-bokobokobomber-wav.wav")
+        bgmSoundAction.autoplayLooped = true
+        self.addChild(bgmSoundAction)
         
         let soundRepeat = SKAction.repeatForever(SoundAction)
         
@@ -166,6 +168,7 @@ class BoardScene: SKScene, SKPhysicsContactDelegate{
             pointnum = pointnum + 0.5
             print("pointuum = \(pointnum)")
             pointlabel.text = String(pointnum)
+            
             
             
 //            ido()
@@ -292,19 +295,16 @@ class BoardScene: SKScene, SKPhysicsContactDelegate{
     
     
     func finish(){
-//        SKAction.stop()
-
-//        self.stop(mySoundAction)
-//        mySoundAction = SKAction.stop()
-        
-        self.removeAllActions()
-        
-    
-        
-
-
+        //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        removeAllChildren()
+        removeAllActions()
+        timer?.invalidate()
+        //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate //AppDelegateのインスタンスを取得
+        appDelegate.message = pointnum //appDelegateの変数を操作
         
     }
+
     
         
     

@@ -286,6 +286,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Zwh-U6-PzX"/>
+                    <connections>
+                        <outlet property="num" destination="iib-gv-vyC" id="JVZ-Nd-CEL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h48-u5-21c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

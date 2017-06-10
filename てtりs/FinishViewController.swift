@@ -9,11 +9,19 @@
 import UIKit
 
 class FinishViewController: UIViewController {
+    
+    @IBOutlet var num: UILabel! = UILabel()
+    
+
+    
+    let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate //AppDelegateのインスタンスを取得
+    
 
     override func viewDidLoad() {
-        
-    @IBOutlet 
         super.viewDidLoad()
+        
+         result()
+        
 
         // Do any additional setup after loading the view.
     }
@@ -21,6 +29,13 @@ class FinishViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func result() {
+       
+        var message:Float = appDelegate.message
+        num.text = String(describing: message)
+        
     }
     
 
