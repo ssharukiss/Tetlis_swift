@@ -43,6 +43,8 @@
 		8A5CCC441E4EF7CF0055AC1E /* BoardScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5CCC431E4EF7CF0055AC1E /* BoardScene.swift */; };
 		8A5CCC461E4EF7FF0055AC1E /* SKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5CCC451E4EF7FF0055AC1E /* SKViewController.swift */; };
 		8A6D473D1DF29C580058711F /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6D473C1DF29C580058711F /* test.swift */; };
+		8A72F1CE1EFE7A29002B835B /* 111.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A72F1CD1EFE7A29002B835B /* 111.png */; };
+		8A72F1D11EFE7B12002B835B /* never.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A72F1D01EFE7B12002B835B /* never.png */; };
 		8A9CD5F01CF98A69006E40B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CD5EF1CF98A69006E40B7 /* AppDelegate.swift */; };
 		8A9CD5F21CF98A69006E40B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CD5F11CF98A69006E40B7 /* ViewController.swift */; };
 		8A9CD5F51CF98A69006E40B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A9CD5F31CF98A69006E40B7 /* Main.storyboard */; };
@@ -120,6 +122,8 @@
 		8A5CCC431E4EF7CF0055AC1E /* BoardScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardScene.swift; sourceTree = "<group>"; };
 		8A5CCC451E4EF7FF0055AC1E /* SKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKViewController.swift; sourceTree = "<group>"; };
 		8A6D473C1DF29C580058711F /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		8A72F1CD1EFE7A29002B835B /* 111.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 111.png; sourceTree = "<group>"; };
+		8A72F1D01EFE7B12002B835B /* never.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = never.png; sourceTree = "<group>"; };
 		8A9CD5EC1CF98A69006E40B7 /* てtりs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "てtりs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A9CD5EF1CF98A69006E40B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A9CD5F11CF98A69006E40B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -246,7 +250,9 @@
 				8A4473531D0BEE9500F8FB7C /* ok.png */,
 				8A9CD65F1CF9AD8A006E40B7 /* 0.png */,
 				8A9CD6571CF9AC21006E40B7 /* left.png */,
+				8A72F1CD1EFE7A29002B835B /* 111.png */,
 				8A9CD6581CF9AC21006E40B7 /* right.png */,
+				8A72F1D01EFE7B12002B835B /* never.png */,
 				8A12BD3A1E6163C300AE1552 /* decision17.mp3 */,
 				8A12BD3C1E6167E900AE1552 /* BGM179-161031-bokobokobomber-wav.wav */,
 			);
@@ -442,6 +448,7 @@
 				8A36F83E1D2BFC59000D1078 /* stock-illustration-62050072-seamless-colorful-abstract-background-made-of-tetris-shapes.jpg in Resources */,
 				8A4473561D0BF6E600F8FB7C /* down.png in Resources */,
 				8A5CCC361E3CB09E0055AC1E /* file1-no1.png in Resources */,
+				8A72F1CE1EFE7A29002B835B /* 111.png in Resources */,
 				8A36F8481D30C201000D1078 /* cute3.png in Resources */,
 				8A5CCC3B1E3CB09E0055AC1E /* file1-no2.png in Resources */,
 				8A36F7BE1D1E5EFC000D1078 /* yes-1.png in Resources */,
@@ -451,6 +458,7 @@
 				8A36F7C01D1E5F0E000D1078 /* yes3.png in Resources */,
 				8A36F7C71D1E76AB000D1078 /* 3.png in Resources */,
 				8A4473581D0BF8B100F8FB7C /* yes.png in Resources */,
+				8A72F1D11EFE7B12002B835B /* never.png in Resources */,
 				8A36F84A1D30C20F000D1078 /* cute2.png in Resources */,
 				8A9CD6601CF9AD8A006E40B7 /* 0.png in Resources */,
 				8A12BD391E615CEE00AE1552 /* file2-no4.png in Resources */,

@@ -27,7 +27,7 @@ class SKViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        Timer.scheduledTimer(withTimeInterval: 10.0, repeats: false) { (timer) in
+        Timer.scheduledTimer(withTimeInterval: 30.0, repeats: false) { (timer) in
             self.finishgame()
         }
         
